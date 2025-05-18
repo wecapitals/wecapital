@@ -1,0 +1,20 @@
+
+
+@media (max-width: 860px) {
+  .productcard-slider {
+    width: 100%!important;
+  }
+      .main-container{
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productcard-slider{
+        width: 100%!important;
+    }
+    .main-container{
+        margin-top: 100px!important;
+    }
+}
+
