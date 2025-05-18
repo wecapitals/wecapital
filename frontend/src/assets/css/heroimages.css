@@ -1,0 +1,72 @@
+/* Base styles */
+.hero-image {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.hero-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.interest-calculator {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Media queries in desktop-first approach (largest to smallest) */
+/* Desktop and larger (default) */
+
+/* Desktop - Medium */
+@media (max-width: 1280px) {
+    /* No changes needed as they match base styles */
+}
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+.hero-image {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.hero-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+
+/* Tablet */
+@media (max-width: 860px) {
+    .hero-image {
+        height: 100vh;
+    }
+    .hero-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+/* Mobile - Large */
+@media (max-width: 480px) {
+    .interest-calculator {
+        margin-top: 50px;
+    }
+}
+
+/* Mobile - Medium */
+@media (max-width: 414px) {
+    .interest-calculator {
+        margin-top: 30px;
+    }
+}
+
+/* Mobile - Small */
+@media (max-width: 360px) {
+    .interest-calculator {
+        margin-top: 20px;
+    }
+}

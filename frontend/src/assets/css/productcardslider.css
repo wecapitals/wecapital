@@ -1,0 +1,109 @@
+/* Product Card Base Styles */
+.product-card-wrapper {
+  width: 40%;
+  margin-bottom: 10px; 
+  border-radius: 0;
+}
+
+.product-card-wrapper .card-text {
+  font-size: 13px;
+}
+
+.product-card {
+  border: none;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0;
+  height: 200px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.product-card .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+  transition: transform 0.5s ease;
+}
+
+.bg-overlay {
+  transition: background 0.3s ease;
+  border-radius: 0;
+}
+
+/* Image container with overflow hidden for zoom effect */
+.image-container {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* Info container with expand effect */
+.info-container {
+  background-color: var(--bs-secondary);
+  padding: 0;
+  margin: 0;
+  transition: max-height 0.5s ease, transform 0.5s ease;
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.card-text {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+/* Hover Effects */
+.product-card:hover .card-img {
+  transform: scale(1.3); /* Zoom effect on hover */
+}
+
+.product-card:hover .info-container {
+  max-height: 150px; /* Expand in Y direction on hover */
+  transform: translateY(-10px);
+}
+
+.product-card:hover .card-text {
+  opacity: 1;
+}
+
+/* Responsive Styles - Desktop-first approach */
+/* Large Desktop (default) */
+
+/* Desktop - Medium */
+@media screen and (max-width: 1440px) and (min-width: 1280px) {
+  .product-card-wrapper {
+    width: 200px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 860px) {
+  .product-card-wrapper {
+    width: 50%;
+  }
+  
+  .product-card {
+    height: 300px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .product-card-wrapper {
+    width: 50%;
+  }
+  
+  .product-card {
+    height: 160px;
+  }
+  
+  .product-card:hover .info-container {
+    max-height: 120px; /* Smaller height on mobile for the expanded info */
+  }
+  
+  .product-card-wrapper .card-text {
+    font-size: 12px; /* Slightly smaller text on mobile */
+  }
+}

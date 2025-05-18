@@ -1,0 +1,18 @@
+:root {
+    --bs-primary: #5ca46c; /* Your custom primary color */
+    --bs-primary-rgb: 92, 164, 108;
+    --bs-primary-bg-subtle: #000000;
+    --bs-primary-border-subtle: #36523c;
+    --bs-primary-text-emphasis: #27c59b;
+  }
+  
+  .btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: #{shade-color($primary, 10%)};
+    --bs-btn-hover-border-color: #{shade-color($primary, 10%)};
+    --bs-btn-active-bg: #{shade-color($primary, 20%)};
+    --bs-btn-active-border-color: #{shade-color($primary, 20%)};
+  }
+
+  
