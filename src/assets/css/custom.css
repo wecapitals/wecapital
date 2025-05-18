@@ -1,0 +1,16 @@
+:root {
+    --bs-primary: #5ca46c; /* Custom primary color */
+    --bs-primary-rgb: 92, 164, 108;
+    --bs-primary-bg-subtle: #000000; /* Consider a lighter color if subtle background is intended */
+    --bs-primary-border-subtle: #36523c;
+    --bs-primary-text-emphasis: #27c59b;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: #528d60; /* 10% darker than --bs-primary */
+    --bs-btn-hover-border-color: #528d60;
+    --bs-btn-active-bg: #497754; /* 20% darker than --bs-primary */
+    --bs-btn-active-border-color: #497754;
+}
